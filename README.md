@@ -21,7 +21,8 @@ see https://codesynthesis.com/pipermail/xsde-users/2020-February/000872.html and
 Thanks to James Sutton form Dolphin Computing www.dolphin-com.co.uk for sharing a build of the alpha version that runs also on MacOS Catalina 10.15.4
 
 ### code generation
-1 ````unzip fhir-codegen-xsd.zip````
+1. ````unzip fhir-codegen-xsd.zip````
+
 2. ````for f in *.xsd ; do xsde cxx-parser $f; done````
 
 
