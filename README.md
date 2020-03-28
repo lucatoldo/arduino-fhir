@@ -11,7 +11,7 @@ Due to the availability of XSD from FHIR.org, and due to the need of automatical
 
 The Code Generation Schemas from https://www.hl7.org/fhir/downloads.html has been downloaded and used as source for generating the code
 
-### xsde code generation
+### xsde code generation engine
 
 The core of the code is generated automatically through the powerful https://www.codesynthesis.com/download/xsde/3.2/ open source XSDE software. 
 
@@ -19,4 +19,9 @@ Thanks to Boris Kolpackov for very rapid support  and sharing the source code th
 see https://codesynthesis.com/pipermail/xsde-users/2020-February/000872.html and https://codesynthesis.com/~boris/tmp/xsde/xsde-3.3.0.a12+dep.tar.bz2
 
 Thanks to James Sutton form Dolphin Computing www.dolphin-com.co.uk for sharing a build of the alpha version that runs also on MacOS Catalina 10.15.4
+
+### code generation
+1 ````unzip fhir-codegen-xsd.zip````
+2. ````for f in *.xsd ; do xsde cxx-parser $f; done````
+
 
